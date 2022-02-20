@@ -11,11 +11,52 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>IP Address Tracker</title>
   </head>
   <body>
-    IP Address Tracker Search for any IP address or domain IP Address Location
-    Timezone UTC ISP
+    <header>
+      <h1>IP Address Tracker</h1>
+      <form id="form">
+        <input
+          type="text"
+          name="ip"
+          placeholder="Search for any IP address or domain"
+        />
+        <button>
+          <img src="./images/icon-arrow.svg" />
+        </button>
+      </form>
+      <div class="info">
+        <div class="info__item">
+          <h2>IP Address</h2>
+          <p id="ip-container"></p>
+        </div>
+
+        <div class="info__item">
+          <h2>Location</h2>
+          <p id="location-container"></p>
+        </div>
+
+        <div class="info__item">
+          <h2>Timezone</h2>
+          <p id="timezone-container"></p>
+        </div>
+
+        <div class="info__item">
+          <h2>ISP</h2>
+          <p id="isp-container"></p>
+        </div>
+      </div>
+    </header>
 
     <footer class="attribution">
       Challenge by
@@ -26,5 +67,6 @@
         >David Balleza</a
       >.
     </footer>
+    <script src="./script.js" defer></script>
   </body>
 </html>

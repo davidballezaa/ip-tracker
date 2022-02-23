@@ -23,9 +23,13 @@ header {
 .info {
   padding: 10px;
   position: absolute;
+  width: 250px;
+  text-align: center;
   background-color: white;
   border-radius: 10px;
   z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .alert {
